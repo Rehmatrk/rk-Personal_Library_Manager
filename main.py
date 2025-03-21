@@ -4,56 +4,62 @@ import json
 # Apply Enhanced Styling
 st.markdown("""
     <style>
-    /* Gradient Background */
+    /* Sky Blue Background */
     .stApp {
-        background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-        color: #f8f9fa;
+        background: linear-gradient(to right, #87CEFA, #00BFFF); 
+        color: #000000;
         font-family: 'Arial', sans-serif;
     }
 
     /* Sidebar Styling */
     .css-1d391kg {
-        background: linear-gradient(to bottom, #004d99, #002147) !important;
-        color: white;
-    }
-    
-    /* Sidebar Menu Text Styling */
-    .css-1d391kg, .css-1v3fvcr, .css-1wy0on6 {
-        color: white !important;
+        background: linear-gradient(to bottom, #f0f8ff, #b0e0e6) !important;
+        color: #000000;
     }
 
     /* Title Styling */
     h1 {
-        color: #FFD700;
+        color: #ffffff;
         text-align: center;
-        font-size: 38px;
+        font-size: 40px;
         font-weight: bold;
-        text-shadow: 2px 2px 8px rgba(255, 215, 0, 0.8);
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
     }
 
     /* Subheader Styling */
     .stMarkdown h2 {
-        color: #FFA500;
+        color: #ffffff;
         font-weight: bold;
     }
 
     /* Styled Buttons */
     .stButton>button {
-        background: linear-gradient(to right, #FF8C00, #FF4500);
+        background: linear-gradient(to right, #0066cc, #004080);
         color: white;
         border-radius: 12px;
         font-size: 18px;
         padding: 12px 24px;
         transition: 0.3s;
         font-weight: bold;
+        border: none;
+    }
+
+    /* Input Field Styling */
+    .stTextInput>div>div>input {
+        background-color: #ffffff;
+        color: #000000;
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 8px;
     }
 
     /* Hover Effect for Buttons */
     .stButton>button:hover {
-        background: linear-gradient(to right, #FF4500, #FF0000);
-        transform: scale(1.1);
-        box-shadow: 0px 4px 12px rgba(255, 69, 0, 0.8);
+        background: linear-gradient(to right, #004080, #00274d);
+        transform: scale(1.05);
+        box-shadow: 0px 4px 12px rgba(0, 91, 187, 0.8);
     }
+
     </style>
 """, unsafe_allow_html=True)
 
@@ -136,3 +142,6 @@ elif menu == "🔍 Search Book":
 elif menu == "💾 Save & Exit":
     save_library()
     st.success("✅ Library Saved!")
+
+   
+            
